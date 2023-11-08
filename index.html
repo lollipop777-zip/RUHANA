@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruhana Honeymoon</title>
+    <style>
+      @media(max-width:767px) {
+        body{
+          height: 1360px !important;
+        }
+        .container{
+          max-width: 100%;
+        }
+        #line{
+          max-width: 100%;
+          height: 15px;
+        }
+        #Info{
+          height: 270px;
+          background-color: white;
+          background-image: url(./assets/0003-318ef525.png);
+          background-size: 100% 100%;
+        }
+        #ticket_top{
+          height: 150px;
+          border-right: none;
+          position: absolute;
+          top: 0;             
+          bottom: 0;           
+          left: 0;        
+          right: 0;
+          margin: auto;
+        }
+        #Ticket{
+          height: 150px;
+          position: relative;
+        }
+        #Time{
+          height: 50px;
+        }
+        #timeline{
+          height: 50px;
+        }
+        #circle{
+          height: 50px;
+          position: relative;
+        }
+        #BTN{
+          font-size: 0.3rem;
+          line-height: 8%;
+          width: 20%;
+          height: 12%;
+        }
+        #HR {
+          border: 0;
+          border-top: 2px solid #F8B62E;
+          width: 60%;
+          position: relative; 
+          left: 50%;
+          top:7%;
+          transform: translate(-50%, -50%);
+        }
+        #Pic{
+          height: 200px;
+          background-color:white;
+          justify-content: center;
+          align-items: center;
+        }
+        #picture{
+          height: 155px;
+          background-color:white;
+          background-image: none;
+        }
+        #N{
+          height: 350px;
+        }
+        #Notice{
+          height: 350px;
+          background-image: url(./assets/0002-3f45ddd3.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position:center center;
+          color: white;
+          position: relative;
+        }
+        #notic{
+          height: 75%;
+          width: 70%;
+          position: absolute;
+          top: 0;             
+          bottom: 0;           
+          left: 0;        
+          right: 0;
+          margin: auto;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #tc1,#tc2,#tc3{
+          height: 31px;
+          width: 31px;
+          border-radius: 99em;
+          position: absolute;
+          top:5%;
+          left:8%;
+          line-height: 31px;
+          margin-left: 8%;
+        }
+        #tcp{
+          font-size: 0.5rem;
+        }
+        #B,#Bottom{
+          height: 150px;
+          background-color:  #F8B62E;
+        }
+        .back-top{
+          width: 30px !important;
+          height: 30px !important; 
+        }
+        #carouselExampleIndicators{
+          display: block;
+        }
+      }
+
+      @media(max-width:992px){
+        .container{
+          max-width: 100%;
+        }
+      }
+
+      @font-face {
+        font-family: 'BaskervilleNo.2Bold';
+        src: local("BaskervilleNo.2Bold"),url(./assets/BaskervilleNo.2Bold-a613d69b.woff) format("woff")}
+
+      @media screen {
+
+        body {
+          width: 100%;
+          background-color: white;
+          font-family: 'BaskervilleNo.2Bold';
+        }
+        p{
+          margin-bottom: 0;
+        }
+        .container-fluid{
+          overflow: hidden;
+        }
+        .home{
+          overflow: hidden;
+        }
+        header{
+          background-color: rgba(255,255,255,0.6);
+          position: sticky;
+          top: 0;
+          z-index: 1;
+        }
+        .introf{
+          font-size: 3vmin;
+          text-align:center;
+          color: white
+        }
+        .Info-c{
+          height: 800px;
+          background-color: white;
+          background-image: url(./assets/0003-318ef525.png);
+          background-size: 100% 100%;
+        }
+        .ticket_top-c{
+          height: 400px;
+          position: absolute;
+          top: 0;             
+          bottom: 0;           
+          left: 0;        
+          right: 0;
+          margin: auto;
+        }
+        .Ticket-c{
+          height: 400px;
+          position: relative;
+        }
+        p{
+          font-size: 2.5vmin;
+          color: black;
+        }
+        .pTop-c{
+          margin-top: 5%;
+        }
+        .btn-outline-secondary{
+          font-size: 2vmin;
+          margin-top: 2%;
+          width: 10%;
+          height: 9%;
+          line-height: 7%;
+        }
+        .hr-solid {
+          border: 0;
+          border-top: 2px solid #F8B62E;
+          width: 60%;
+          position: relative; 
+          left: 50%;
+          top:15%;
+          transform: translate(-50%, -50%);
+        }
+        .Time-c{
+          height: 250px;
+        }
+        .timeline-c{
+          height: 250px;
+        }
+        .circle-c{
+          height: 250px;
+          width: 15%;
+        }
+        .Pic-c{
+          height: 500px;
+          background-color:white;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 2%;
+        }
+        .picture-c{
+          height: 450px;
+          background-color:white;
+          background-image: url(./assets/0007.png);
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .carousel{
+          display: none;
+        }
+        .N-c{
+          height: 950px;
+        }
+        .Notice-c{
+          height: 950px;
+          background-image: url(./assets/0002-3f45ddd3.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: white;
+          position: relative;
+        }
+        .notic-c{
+          height: 75%;
+          width: 60%;
+          position: absolute;
+          top: 0;             
+          bottom: 0;           
+          left: 0;        
+          right: 0;
+          margin: auto;
+          background-color: white;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .tc1-c,.tc2-c,.tc3-c{
+          height: 80px;
+          width: 80px;
+          border-radius: 99em;
+          margin-top: 10%;
+          margin-left: 30%;
+          line-height: 80px;
+        }
+        .tc1-c:hover,.tc2-c:hover,.tc3-c:hover{
+          height: 100px;
+          width: 100px;
+          line-height: 100px;
+          border-radius: 99em;
+        }
+        .tcp-c{
+          font-size: 2.5vmin;
+          font-family: '微軟正黑體';
+        }
+        .B-c,.Bottom-c{
+          height: 250px;
+          background-color:  #F8B62E;
+        }
+        .back-top {
+          z-index: 99999;
+          position: fixed;
+          bottom: 5px;
+          right: 5px;
+          cursor: pointer;
+          opacity: 0.5;
+          filter: Alpha(opacity=50);
+          width: 45px;
+          height: 45px;
+          background: #000 center no-repeat
+            url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iQ2FwYV8xIgogICB4PSIwcHgiCiAgIHk9IjBweCIKICAgd2lkdGg9IjUxMnB4IgogICBoZWlnaHQ9IjUxMnB4IgogICB2aWV3Qm94PSIwIDAgNDUxLjg0NiA0NTEuODQ3IgogICBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NTEuODQ2IDQ1MS44NDc7IgogICB4bWw6c3BhY2U9InByZXNlcnZlIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjQ4LjUgcjEwMDQwIgogICBzb2RpcG9kaTpkb2NuYW1lPSJhcnJvdy1wb2ludC10by1yaWdodC5zdmciPjxtZXRhZGF0YQogICBpZD0ibWV0YWRhdGE0MSI+PHJkZjpSREY+PGNjOldvcmsKICAgICAgIHJkZjphYm91dD0iIj48ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD48ZGM6dHlwZQogICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPjwvY2M6V29yaz48L3JkZjpSREY+PC9tZXRhZGF0YT48ZGVmcwogICBpZD0iZGVmczM5IiAvPjxzb2RpcG9kaTpuYW1lZHZpZXcKICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgb2JqZWN0dG9sZXJhbmNlPSIxMCIKICAgZ3JpZHRvbGVyYW5jZT0iMTAiCiAgIGd1aWRldG9sZXJhbmNlPSIxMCIKICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTYwMCIKICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iODM3IgogICBpZD0ibmFtZWR2aWV3MzciCiAgIHNob3dncmlkPSJmYWxzZSIKICAgaW5rc2NhcGU6em9vbT0iMC40NjA5Mzc1IgogICBpbmtzY2FwZTpjeD0iMjU2IgogICBpbmtzY2FwZTpjeT0iMjU2IgogICBpbmtzY2FwZTp3aW5kb3cteD0iLTgiCiAgIGlua3NjYXBlOndpbmRvdy15PSItOCIKICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0iQ2FwYV8xIiAvPgo8ZwogICBpZD0iZzMiCiAgIHN0eWxlPSJmaWxsOiNmZmZmZmYiCiAgIHRyYW5zZm9ybT0ibWF0cml4KDAsLTEsLTEsMCw0NTEuODQ2NSw0NTEuODQ2NSkiPgoJPHBhdGgKICAgZD0iTSAzNDUuNDQxLDI0OC4yOTIgMTUxLjE1NCw0NDIuNTczIGMgLTEyLjM1OSwxMi4zNjUgLTMyLjM5NywxMi4zNjUgLTQ0Ljc1LDAgLTEyLjM1NCwtMTIuMzU0IC0xMi4zNTQsLTMyLjM5MSAwLC00NC43NDQgTCAyNzguMzE4LDIyNS45MiAxMDYuNDA5LDU0LjAxNyBjIC0xMi4zNTQsLTEyLjM1OSAtMTIuMzU0LC0zMi4zOTQgMCwtNDQuNzQ4IDEyLjM1NCwtMTIuMzU5IDMyLjM5MSwtMTIuMzU5IDQ0Ljc1LDAgbCAxOTQuMjg3LDE5NC4yODQgYyA2LjE3Nyw2LjE4IDkuMjYyLDE0LjI3MSA5LjI2MiwyMi4zNjYgMCw4LjA5OSAtMy4wOTEsMTYuMTk2IC05LjI2NywyMi4zNzMgeiIKICAgaWQ9InBhdGg1IgogICBzdHlsZT0iZmlsbDojZmZmZmZmIgogICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiAvPgo8L2c+CjxnCiAgIGlkPSJnNyI+CjwvZz4KPGcKICAgaWQ9Imc5Ij4KPC9nPgo8ZwogICBpZD0iZzExIj4KPC9nPgo8ZwogICBpZD0iZzEzIj4KPC9nPgo8ZwogICBpZD0iZzE1Ij4KPC9nPgo8ZwogICBpZD0iZzE3Ij4KPC9nPgo8ZwogICBpZD0iZzE5Ij4KPC9nPgo8ZwogICBpZD0iZzIxIj4KPC9nPgo8ZwogICBpZD0iZzIzIj4KPC9nPgo8ZwogICBpZD0iZzI1Ij4KPC9nPgo8ZwogICBpZD0iZzI3Ij4KPC9nPgo8ZwogICBpZD0iZzI5Ij4KPC9nPgo8ZwogICBpZD0iZzMxIj4KPC9nPgo8ZwogICBpZD0iZzMzIj4KPC9nPgo8ZwogICBpZD0iZzM1Ij4KPC9nPgo8L3N2Zz4=);
+          background-size: 24px 24px;
+          border-radius: 12px;
+          border: 1px rgba(255, 255, 255, 0.6) solid;
+          box-shadow: 0px 0px 3px #ffffff;
+          transform: translateY(0%);
+          transition: all 0.2s linear;
+        }
+
+        .back-top:hover {
+          opacity: 0.8;
+          filter: Alpha(opacity=80);
+          box-shadow: 0px 0px 6px #ffffff;
+        }
+
+        .back-top.hide {
+          opacity: 0;
+          filter: Alpha(opacity=0);
+          transform: translateY(150%);
+        }
+
+      }
+    </style>
+    <script type="text/javascript" src="./assets/jquery.js"></script>
+    <script type="module" crossorigin src="/assets/index-2f5592b9.js"></script>
+    <link rel="stylesheet" href="/assets/index-fc5f319f.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent ms-4 ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RUHANA HONEYMOON</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#info">Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#special">Special</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dress">Staff</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="home" style="background-color: #F8B62E;">
+      <a name="home" >
+        <div class="row" style="display: flex;justify-content: center;align-items: center;">
+          <div class="col-12" style="display: flex;justify-content: center;align-items: center;">
+            <img src="./assets/0001-b153b5d1.jpg" style="width:100%;height:auto;object-fit: cover;" >
+          </div>
+          <div class="col-12" style="margin-top:2%;margin-bottom: 3%;">
+            <p class="introf">Welcome to RUHANA Villa X SHOHOKU Tour Group</p>
+            <p class="introf">We will provide you with the supreme honeymoon travel service</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="container-fluid overflow-hidden">
+      <a name="info">
+        <div class="row align-items-center Info-c" id="Info">
+          <div class="col-md-12">
+            <div class="row Ticket-c" id="Ticket">
+              <div class="col text-center ticket_top-c " id="ticket_top">
+                <p class="pTop-c" id="pTop">THE FIRST SLAM DUNK</p>
+                <p>2023.08.06(SUN) 15:00</p>
+                <p>Taipei Miramar Da-Zhi Cinema </p>
+                <p>7F Theater 7</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="BTN">
+                  Join
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hello</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Welcome to RUHANA VILLA！
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr-solid" id="HR">
+              </div>
+            </div>
+            <div class="row Time-c" id="Time">
+              <div class="col timeline-c" id="timeline">
+                <div class="row justify-content-center Circle-c" id="Circle">
+                  <div class="col-md-4 order-1 circle-c" id="circle">
+                    <div class="tc1-c text-center" id="tc1" style="background-color: #F8B62E;">
+                      <p class="tcp-c" id="tcp" style="color: white;">流花</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 order-2 circle-c" id="circle">
+                    <div class="tc2-c text-center" id="tc2" style="background-color: #85E1E6;">
+                      <p class="tcp-c" id="tcp" style="color: white;">蜜月</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 order-3 circle-c" id="circle">
+                    <div class="tc3-c text-center" id="tc3" style="background-color: #EDE374;">
+                      <p class="tcp-c" id="tcp" style="color: white;">愛愛</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="container-fluid overflow-hidden">
+      <a  name="special">
+        <div class="row Pic-c" id="Pic">
+          <div class="col picture-c" id="picture">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/0006.jpg" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/0005.jpg" class="d-block w-100 img-fluid" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="container-fluid overflow-hidden">
+      <a name="dress">
+        <div class="row N-c" id="N">
+          <div class="col Notice-c" id="Notice">
+            <div class="notic-c text-center" id="notic">
+              <div class="staff-c" id="staff">
+                <p class="Dress-c" id="Dress">🌴【Dress Code】</p>
+                <p style="margin-top: 2%;">嚕哈娜渡假村職員(主辦方及工作人員)</p>
+                <p><b>身穿花襯衫且佩戴名牌+花圈</b></p>
+                <p style="margin-top: 2%;">湘北旅行團(各位旅客)</p>
+                <p><b>旅遊時或一般場合的衣著，以舒適方便即可</b></p>
+                <p style="margin-top: 2%;">煩請旅客們<b>避免穿著花襯衫</b>以便辨識職員</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="container-fluid overflow-hidden">
+      <div class="row B-c" id="B">
+        <div class="col Bottom-c" id="Bottom">
+          <div class="bottom-c text-center" id="bottom">
+            <br>
+            <br>
+            <a href="https://www.plurk.com/p/p953hh" target="_blank" style="color: white;font-size: 2vmin;">Plurk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="back-top hide" title="回頂部"></div>
+
+    <script>
+      $(document).ready(function () {
+        // 捲軸偵測距離頂部超過 50 才顯示按鈕
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 50) {
+            if ($(".back-top").hasClass("hide")) {
+              $(".back-top").toggleClass("hide");
+            }
+          } else {
+            $(".back-top").addClass("hide");
+          }
+        });
+
+        // 點擊按鈕回頂部
+        $(".back-top").on("click", function (event) {
+          $("html, body").animate(
+            {
+              scrollTop: 0
+            },
+            500 // 回頂部時間為 500 毫秒
+          );
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </body>
+</html>
